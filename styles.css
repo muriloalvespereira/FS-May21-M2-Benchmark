@@ -47,6 +47,14 @@ span p .bi-search {
   margin-right: 25px;
 }
 
+.box-card1 > span {
+  color: white;
+}
+
+p {
+  margin: 0px;
+}
+
 .card-text {
   color: #000;
   font-family: "Lato", sans-serif;
@@ -57,16 +65,26 @@ span p .bi-search {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.one {
+/* .one {
   margin-bottom: 41.8px;
-}
-.one-promotion {
+} */
+/* .one-promotion {
   margin-bottom: 28.8px;
-}
+} */
 
 .card-body {
   height: 104px;
   padding-top: 8px;
+}
+.card-body1 {
+  height: 104px;
+  flex-direction: column;
+  padding: 11px;
+  justify-content: space-between;
+}
+.card-bottom-line {
+  justify-content: space-between;
+  align-items: center;
 }
 .fab {
   color: #9b9b9b;
@@ -80,8 +98,9 @@ span p .bi-search {
 
 .font-bottom-card {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 14px;
   font-family: "Lato", sans-serif;
+  color: #000;
 }
 .box-card {
   position: absolute;
@@ -93,7 +112,15 @@ span p .bi-search {
   color: white;
 }
 
-@media (min-width: 991.98px) and (max-width: 1199.98px) {
+.box-card1 {
+  text-align: center;
+  background-color: #78387b;
+  color: white;
+  font-size: 14px;
+  align-items: center;
+}
+
+/* @media (min-width: 991.98px) and (max-width: 1199.98px) {
   .box-card {
     position: absolute;
     text-align: center;
@@ -114,12 +141,22 @@ span p .bi-search {
     background-color: #78387b;
     color: white;
   }
-}
+} */
 
-@media (min-width: 767.98px) and (max-width: 991.98px) {
+/* @media (max-width: 767.96px) {
+  .one-promotion1 {
+    margin-bottom: 28.8px;
+  } */
+
+/* @media (min-width: 767.98px) and (max-width: 991.98px) {
   .card-queries {
     margin-bottom: 28.8px;
   }
+} */
+
+.col-prices {
+  flex-direction: column;
+  align-items: flex-end;
 }
 .text-numb {
   display: flex;
@@ -128,12 +165,12 @@ span p .bi-search {
 }
 .text-sub {
   color: #9b9b9b;
-  font-size: 11px;
+  font-size: 10px;
   text-decoration: line-through;
 }
-.box-icons {
+/* .box-icons {
   padding-bottom: 12px;
-}
+} */
 .hr-lign {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
