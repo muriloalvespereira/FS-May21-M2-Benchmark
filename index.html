@@ -24,7 +24,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
     />
 
@@ -107,7 +107,7 @@
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown mr-4">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -126,6 +126,7 @@
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
             </li>
+            <img src="./assets/muriloavatar.png" class="img-avatar" alt="" />
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -211,13 +212,17 @@
       </a>
     </div>
 
-    <div class="container mb-5 mt-5">
+    <div class="container mb-4 mt-5">
       <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
         <div class="col mb-4">
           <div class="card">
             <img src="./assets/tile (10).jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <p class="card-text">Armed and Dangerous</p>
+              <p class="card-text one">Armed and Dangerous</p>
+              <div class="row bottom-card d-flex">
+                <div class=""><i class="fab fa-windows"></i></div>
+                <div class="font-bottom-card">$ 19.99</div>
+              </div>
             </div>
           </div>
         </div>
@@ -226,6 +231,17 @@
             <img src="./assets/tile (2).jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <p class="card-text">Deluxe Edition Roller Coaster Tycoon</p>
+              <div class="row bottom-card d-flex">
+                <div class="box-icons">
+                  <i class="fab fa-windows mr-1"></i
+                  ><i class="fab fa-apple mr-1"><i class="fab fa-linux"></i></i>
+                </div>
+                <div class="box-card mb-1">-73%</div>
+                <div class="text-numb">
+                  <div class="text-sub">$59.39</div>
+                  <div class="font-bottom-card">$ 16.03</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -233,7 +249,15 @@
           <div class="card">
             <img src="./assets/tile (6).jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <p class="card-text">Disco Elysium</p>
+              <p class="card-text one-promotion">Disco Elysium</p>
+              <div class="row bottom-card d-flex">
+                <div class="mb-1"><i class="fab fa-windows"></i></div>
+                <div class="box-card mb-1">-25%</div>
+                <div class="text-numb">
+                  <div class="text-sub">$19.99</div>
+                  <div class="font-bottom-card">$ 14.99</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -244,12 +268,49 @@
               <p class="card-text">
                 Dungeons Dragons Baldur's Gate II Enhanced Edition
               </p>
+              <div class="row bottom-card d-flex">
+                <div class="box-icons">
+                  <i class="fab fa-windows mr-1"></i
+                  ><i class="fab fa-apple mr-1"><i class="fab fa-linux"></i></i>
+                </div>
+                <div class="box-card mb-1">-10%</div>
+                <div class="text-numb">
+                  <div class="text-sub">$14.99</div>
+                  <div class="font-bottom-card">$ 13.49</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
+    <div class="container-fluid hr-lign mb-4 d-flex">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            We are GOG.COM, the <span class="color-bar">DRM-free</span> home for
+            a <span class="color-bar">curated selection</span> of games. This
+            place was <span class="color-bar">made for gamers</span>, so make
+            yourself at home.
+          </div>
+          <div class="col-1">
+            <div class="vertical-line"></div>
+          </div>
+          <div class="col-3 .row-bar d-flex">
+            <div class="circle-purple d-inline-block">
+              <div class="circle-inside"></div>
+            </div>
+            <p class="d-inline-block p-circle ml-2 pt-1">
+              The new GOG GALAXY 2.0
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/b6ae80becd.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
