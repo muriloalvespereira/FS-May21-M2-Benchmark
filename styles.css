@@ -26,8 +26,15 @@ body {
 .top-undernav {
   font-weight: bold;
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   padding-top: 57px;
+  padding-left: 15px;
+}
+
+.break-sections {
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
   padding-left: 15px;
 }
 
@@ -64,6 +71,10 @@ p {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.hidden-overflow {
   overflow: hidden;
 }
 /* .one {
