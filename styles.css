@@ -174,12 +174,14 @@ p {
 .hr-lign {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  height: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   align-items: center;
   font-size: 13px;
 }
 
 .row-bar {
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -218,6 +220,7 @@ p {
   font-size: 16px;
   font-weight: bold;
 }
+
 .color-bar {
   color: purple;
   font-size: 13px;
