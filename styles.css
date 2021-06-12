@@ -107,6 +107,12 @@ p {
     padding-bottom: 25px;
   }
 }
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  .pad-img {
+    padding-bottom: 25px;
+    width: 100%;
+  }
+}
 /* .one {
   margin-bottom: 41.8px;
 } */
