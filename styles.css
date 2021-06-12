@@ -80,6 +80,11 @@ p {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.hidden-overflow1 {
+  justify-content: space-between;
+}
+
 /* .one {
   margin-bottom: 41.8px;
 } */
