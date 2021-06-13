@@ -861,13 +861,13 @@
         <div>
           <p>Now on sale</p>
         </div>
-        <div class="ml-5 border-section1 d-none d-md-block">
+        <div class="ml-5 menu-bar menu1 border-section1 d-none d-md-block">
           <p>Featured deals</p>
         </div>
-        <div class="ml-3 d-none d-md-block">
+        <div class="ml-3 menu-bar menu2 sans-border-section1 d-none d-md-block">
           <p>Weekly sale</p>
         </div>
-        <div class="ml-3 d-none d-md-block">
+        <div class="ml-3 menu-bar menu3 sans-border-section1 d-none d-md-block">
           <p>Timeless classics</p>
         </div>
       </div>
@@ -1005,6 +1005,50 @@
       </div>
     </div>
   </div>
+  <script>
+
+let hoverMouse = document.querySelectorAll(
+        ".menu-bar"
+      );
+
+      for (let i = 0; i < hoverMouse.length; i++) {
+        let result = hoverMouse[i];
+        result.addEventListener(`click`, function (event) {
+          if(result.innerText === "Weekly sale"){
+            result.classList.add("border-section1");
+            result.classList.remove("sans-border-section1");
+            let menuOne = document.querySelector(".menu1");
+            menuOne.classList.remove("border-section1");
+            menuOne.classList.add("sans-border-section1");
+
+            let menuThree = document.querySelector(".menu3");
+            menuThree.classList.remove("border-section1");
+            menuThree.classList.add("sans-border-section1");
+          } else if(result.innerText === "Featured deals"){
+            result.classList.add("border-section1");
+            result.classList.remove("sans-border-section1");
+            let menuTwo = document.querySelector(".menu2");
+            menuTwo.classList.remove("border-section1");
+            menuTwo.classList.add("sans-border-section1");
+
+            let menuThree = document.querySelector(".menu3");
+            menuThree.classList.remove("border-section1");
+            menuThree.classList.add("sans-border-section1");
+          } else if(result.innerText === "Timeless classics"){
+            result.classList.add("border-section1");
+            result.classList.remove("sans-border-section1");
+            let menuTwo = document.querySelector(".menu2");
+            menuTwo.classList.remove("border-section1");
+            menuTwo.classList.add("sans-border-section1");
+
+            let menuOne = document.querySelector(".menu1");
+            menuOne.classList.remove("border-section1");
+            menuOne.classList.add("sans-border-section1");
+          }
+          
+        });
+      }
+  </script>
   <script src="https://kit.fontawesome.com/b6ae80becd.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
