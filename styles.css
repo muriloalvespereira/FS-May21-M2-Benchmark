@@ -305,3 +305,25 @@ p {
   cursor: pointer;
   color: black;
 }
+
+.menu1:hover {
+  border-bottom: 3px solid black;
+  border-color: purple;
+  color: purple;
+}
+.menu2:hover {
+  border-bottom: 3px solid black;
+  border-color: purple;
+  color: purple;
+}
+.menu3:hover {
+  border-bottom: 3px solid black;
+  border-color: purple;
+  color: purple;
+}
+
+@media (max-width: 767.98px) {
+  .border-section5 {
+    justify-content: space-between;
+  }
+}
